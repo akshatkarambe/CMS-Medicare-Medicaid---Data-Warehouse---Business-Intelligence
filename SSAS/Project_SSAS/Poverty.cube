@@ -1,0 +1,238 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ed150ea3-cf1e-4f70-89db-894869da4d8b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Poverty</ID>
+  <Name>Poverty</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="f723fd97-f6ed-44ef-bf70-f18d972b9418">
+      <ID>Dim Race</ID>
+      <Name>Dim Race</Name>
+      <DimensionID>Dim Race</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6ccb7a31-dce2-4e45-b279-90ed334ab387">
+          <AttributeID>Race SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43236a0f-8e33-4d36-acbd-70c159d3167b">
+          <AttributeID>Race</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="85e9801b-8e33-4fd7-b886-500d837ea041">
+      <ID>Dim Year</ID>
+      <Name>Dim Year</Name>
+      <DimensionID>Dim Year</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8093a301-0ce2-4368-97e3-35debf883407">
+          <AttributeID>Year SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0a63acec-a6db-4fc2-94e1-c57d8c16fb79">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ab0c7909-d134-43f1-a83e-47a69e31a268">
+      <ID>Dim State</ID>
+      <Name>Dim State</Name>
+      <DimensionID>Dim State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9a27f6b7-b1f6-4b28-b624-e30964032449">
+          <AttributeID>State SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="24ede010-55c6-41c1-8f54-8eafe1d4cfe0">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="384c02cf-9fe6-4445-bc4a-998db7e9a57a">
+      <ID>Dim Age Group</ID>
+      <Name>Dim Age Group</Name>
+      <DimensionID>Dim Age Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="cc6a155e-67d0-468c-8b67-b3c6261597f2">
+          <AttributeID>Age Group SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1898a215-25a2-469b-a644-f8a483dbec0c">
+          <AttributeID>Age Group</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7cfe5277-7fab-4d45-8dc3-e05fb4c45384">
+      <ID>Dim Gender</ID>
+      <Name>Dim Gender</Name>
+      <DimensionID>Dim Gender</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b430af5a-252a-4775-8aaf-860f6f087a43">
+          <AttributeID>Gender SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8d85d05f-4077-4b36-b05f-d111a1d62d74">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="560e47c2-b684-4529-8569-c474de34fd7d">
+      <ID>Poverty Fact</ID>
+      <Name>Poverty Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="be9c0f56-c2d1-4cda-a202-141d2be99c9b">
+          <ID>Poverty Rate</ID>
+          <Name>Poverty Rate</Name>
+          <Source dwd:design-time-name="75f00bc3-58b1-498a-9820-988ad275f7fa">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="44900b62-77eb-4236-b508-5dbffaaf8e8e">
+              <TableID>dbo_Poverty_Fact</TableID>
+              <ColumnID>Poverty_Rate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b3ff30a1-631b-4c36-aba4-22feb3c7f524">
+          <CubeDimensionID>Dim Race</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a912c49d-1378-4a51-834d-ac13b68cac77">
+              <AttributeID>Race SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e5f450b4-8be6-4ce2-890b-6cc5db4553ce">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="22c712c2-343a-473d-8abd-93bb87447956">
+                    <TableID>dbo_Poverty_Fact</TableID>
+                    <ColumnID>Race_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d2f6eb8e-14db-4593-aeae-a1dd15958286">
+          <CubeDimensionID>Dim Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="513dcfe1-9351-48c5-a8d9-bb1805374e59">
+              <AttributeID>Year SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e0f5b20a-2197-474a-9866-e6678e3d5830">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="515921b2-326b-4e07-acfe-a50cf50aa74d">
+                    <TableID>dbo_Poverty_Fact</TableID>
+                    <ColumnID>Year_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="489c8ecf-e203-41e9-b243-99a439bed4ed">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e91d7a7a-3036-4895-a6e7-0fc5f7f1ba35">
+              <AttributeID>State SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="361de832-87d6-4de0-926e-051418408785">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bc2c99ba-c9b0-461b-bc04-6f3591342f39">
+                    <TableID>dbo_Poverty_Fact</TableID>
+                    <ColumnID>State_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="88cc61bd-1834-4974-989d-a98e88c62e65">
+          <CubeDimensionID>Dim Age Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f4d3a15a-ce28-4814-ba3f-ccd88cb64499">
+              <AttributeID>Age Group SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b5b75942-0704-46c3-b3d7-d2b3020308a1">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ba6a9fd-a893-4b76-96f0-8abee4435f5a">
+                    <TableID>dbo_Poverty_Fact</TableID>
+                    <ColumnID>AgeGroup_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f7eea125-7513-46a2-8e62-41ac5b0547f8">
+          <CubeDimensionID>Dim Gender</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bc9bdfaa-ce19-4796-964d-aa6464849e55">
+              <AttributeID>Gender SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9d14ae07-d311-497c-8477-fc9ef66a935b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="02fc074f-f42a-4e42-888b-e7100644fe3c">
+                    <TableID>dbo_Poverty_Fact</TableID>
+                    <ColumnID>Gender_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="ff1f9dbc-7bbd-46aa-8ac8-5732a8eaa27c">
+    <DataSourceViewID>Project DW</DataSourceViewID>
+  </Source>
+</Cube>

@@ -1,0 +1,206 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="72ac2ca5-dd6c-4996-8bb2-3a4146920b73" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>HID</ID>
+  <Name>HID</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="e8c1d5dc-3adb-4daf-a294-7a822f947e53">
+      <ID>Dim Coverage Type</ID>
+      <Name>Dim Coverage Type</Name>
+      <DimensionID>Dim Coverage Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9067a0b1-69d9-456c-8e0e-548fb09d35d0">
+          <AttributeID>Coverage Type SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c6b053ab-2b4c-4aaa-9ac1-71b5db200cd2">
+          <AttributeID>Coverage Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ea6d493b-fa4c-4366-ac92-645dde4543e5">
+      <ID>Dim Age Group</ID>
+      <Name>Dim Age Group</Name>
+      <DimensionID>Dim Age Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2e1d74b8-4078-4332-840b-14c709869faf">
+          <AttributeID>Age Group SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="94459fe4-6a9a-4235-96a9-5505ea19318e">
+          <AttributeID>Age Group</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="633081ab-6c6d-43c7-bb05-c3fd98f60fc5">
+      <ID>Dim State</ID>
+      <Name>Dim State</Name>
+      <DimensionID>Dim State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="41d8407f-66a0-4d37-9e9a-e9f3e278c75f">
+          <AttributeID>State SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d4898026-670f-4f2e-9d60-0039cd42dbd0">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ff347ecf-bea2-436f-ba83-c422704b90fb">
+      <ID>Dim Year</ID>
+      <Name>Dim Year</Name>
+      <DimensionID>Dim Year</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="66a43f64-4ac0-44fb-a134-ebdb9155edd3">
+          <AttributeID>Year SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8d9d4dca-db57-4b08-bace-2de327f1f2c1">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="3c4cfa0f-1b69-4258-9c4f-30d85f6315da">
+      <ID>Health Insurance Dispersion Fact</ID>
+      <Name>Health Insurance Dispersion Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="747c4211-6f83-4e96-a978-579acb7009d8">
+          <ID>Total People</ID>
+          <Name>Total People</Name>
+          <Source dwd:design-time-name="5dbcce2b-5428-4e48-a1da-19af67ed4b56">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2919b1d4-1324-4113-9f3b-c34e83fbcf11">
+              <TableID>dbo_HealthInsuranceDispersion_Fact</TableID>
+              <ColumnID>Total_People</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="324b6416-6213-4837-a60a-b5629457b282">
+          <CubeDimensionID>Dim Coverage Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="07976ab8-01a3-4a7d-af15-afc2685d67ff">
+              <AttributeID>Coverage Type SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e01db386-6af6-4e3b-9497-d81a8dab0deb">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b86b2f58-9ca4-410c-953b-1b62addc467a">
+                    <TableID>dbo_HealthInsuranceDispersion_Fact</TableID>
+                    <ColumnID>CoverageType_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="87776e3f-cdf9-46f1-abac-400443868bcd">
+          <CubeDimensionID>Dim Age Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="35c4db61-4589-465d-ba41-7cc8e8b884a2">
+              <AttributeID>Age Group SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d44e804c-cc26-4802-bd68-f3e037a472d3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="45c2dee0-dde2-4896-9fa0-c72e302f75e1">
+                    <TableID>dbo_HealthInsuranceDispersion_Fact</TableID>
+                    <ColumnID>AgeGroup_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="954ec536-c6a8-47f1-93fb-ad171410dc2a">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="089243eb-dac2-480b-b572-5d98520a7a98">
+              <AttributeID>State SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8cbdbb46-7536-45a3-9695-c23ebc2a40f3">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a8cfd10e-8d2e-4663-9610-b3c6cf3a0f24">
+                    <TableID>dbo_HealthInsuranceDispersion_Fact</TableID>
+                    <ColumnID>State_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a6a346a8-dbf7-49b2-b8bf-9ee626ed4497">
+          <CubeDimensionID>Dim Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2b7f2ae6-ae8e-40f1-8121-7a422ab368ee">
+              <AttributeID>Year SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bf8201a0-8446-4ce5-857c-fa0e748ae83e">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d52ed664-d36c-40d8-a6ed-ddaa53dce267">
+                    <TableID>dbo_HealthInsuranceDispersion_Fact</TableID>
+                    <ColumnID>Year_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="41983dcf-5d22-43a6-9020-bd935cb7cabe">
+    <DataSourceViewID>Project DW</DataSourceViewID>
+  </Source>
+</Cube>

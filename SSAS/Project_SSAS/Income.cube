@@ -1,0 +1,164 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f4164db3-9875-4443-bf4e-3a4897049189" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Income</ID>
+  <Name>Income</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="6fbd3e5b-dfd6-40d7-a389-56b799f09037">
+      <ID>Dim Year</ID>
+      <Name>Dim Year</Name>
+      <DimensionID>Dim Year</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4f1fcfb2-d72d-49c9-8929-e3b857bf1055">
+          <AttributeID>Year SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f094305a-e731-48cc-bcd8-d7038698d97d">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="915b0118-19fd-475f-bc3e-d2e29e221593">
+      <ID>Dim State</ID>
+      <Name>Dim State</Name>
+      <DimensionID>Dim State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="11f8141e-0ec6-4527-a8a3-6f04121bade5">
+          <AttributeID>State SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="135e6035-bb4a-4247-8b44-5a8c80088f16">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="bf5428d0-7023-45a2-8ff1-f1066f45e933">
+      <ID>Income Fact</ID>
+      <Name>Income Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0e3e6a92-a26c-411c-8168-70ce13d3484e">
+          <ID>Personal Income</ID>
+          <Name>Personal Income</Name>
+          <Source dwd:design-time-name="24b5d2bd-ba81-4c25-ad05-7a47692eaa86">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4cd80b26-439e-4ec2-a7a0-73b0d1831d5b">
+              <TableID>dbo_Income_Fact</TableID>
+              <ColumnID>Personal_Income</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0e461cfc-1eeb-4fad-90f7-e6190d1f7469">
+          <ID>Per Capital Income</ID>
+          <Name>Per Capital Income</Name>
+          <Source dwd:design-time-name="28fdeef2-a755-43ee-b7fb-65d4aa68ff3f">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="79af1f8d-de53-42c4-9d6e-3aefbbe26135">
+              <TableID>dbo_Income_Fact</TableID>
+              <ColumnID>PerCapital_Income</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="02874f00-f4d1-43da-8808-58a7f424df76">
+          <ID>Regional Price Parity</ID>
+          <Name>Regional Price Parity</Name>
+          <Source dwd:design-time-name="0b07b616-b80d-41e9-9eb7-0db9f7d75450">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d82a6ed2-22d2-4874-87df-22907fb0e0b0">
+              <TableID>dbo_Income_Fact</TableID>
+              <ColumnID>RegionalPriceParity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="00784824-c717-4fe4-9860-9920a2130cd9">
+          <CubeDimensionID>Dim Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dcd6a6c3-8549-4487-b60a-4c2d896d0798">
+              <AttributeID>Year SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6525ee86-0118-4b24-8a49-0b30e524fe93">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d3813b6f-74c8-4fe0-8a33-648c360adb26">
+                    <TableID>dbo_Income_Fact</TableID>
+                    <ColumnID>Year_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="046bb9f0-a19a-450f-8839-664c61c0e4b3">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="13c5cb2b-d112-4d01-be30-0b0d036a12c4">
+              <AttributeID>State SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ce33b359-de8b-4c93-b7d1-6b9e6452aab5">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bde9d6d5-69ac-43ef-922e-846c8722afed">
+                    <TableID>dbo_Income_Fact</TableID>
+                    <ColumnID>State_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="38aa00f9-6002-4487-8ff4-cc2a0309380c">
+    <DataSourceViewID>Project DW</DataSourceViewID>
+  </Source>
+</Cube>

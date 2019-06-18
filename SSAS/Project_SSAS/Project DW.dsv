@@ -1,0 +1,318 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5fe27fb6-d28e-475f-bfae-4fadd3a92a8a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Project DW</ID>
+  <Name>Project DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>ProjectDW</DataSourceID>
+  <Schema>
+    <xs:schema id="Project_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Project_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="02a0b0fe-db27-472c-b619-0fbf9a3bf280">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_HealthInsuranceDispersion_Fact" msprop:design-time-name="daf84c19-1e55-4fbb-a395-0aa3e12ce53a" msprop:DbTableName="HealthInsuranceDispersion_Fact" msprop:FriendlyName="HealthInsuranceDispersion_Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Total_People" msprop:design-time-name="3ddd658d-2b0d-402f-aded-60494bf1a16c" msprop:DbColumnName="Total_People" msprop:FriendlyName="Total_People" type="xs:int" minOccurs="0" />
+                  <xs:element name="State_SK" msprop:design-time-name="d2af100e-2dbd-44ee-ad82-a8a94ef3cb67" msprop:DbColumnName="State_SK" msprop:FriendlyName="State_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="CoverageType_SK" msprop:design-time-name="93066087-cbf4-413f-ad8f-3cb60b199c17" msprop:DbColumnName="CoverageType_SK" msprop:FriendlyName="CoverageType_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="AgeGroup_SK" msprop:design-time-name="2575c982-db58-4ea1-83e2-b6c4a22bb5c4" msprop:DbColumnName="AgeGroup_SK" msprop:FriendlyName="AgeGroup_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year_SK" msprop:design-time-name="407a4c2d-656d-4f1e-83f4-667edf13e724" msprop:DbColumnName="Year_SK" msprop:FriendlyName="Year_SK" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Income_Fact" msprop:design-time-name="fb0a2ee3-fc89-49ca-bd0e-2d4b225e8b9e" msprop:DbTableName="Income_Fact" msprop:FriendlyName="Income_Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Personal_Income" msprop:design-time-name="3c0a303a-7dfd-4c5c-8569-ebabb42144ad" msprop:DbColumnName="Personal_Income" msprop:FriendlyName="Personal_Income" type="xs:double" minOccurs="0" />
+                  <xs:element name="PerCapital_Income" msprop:design-time-name="9c5c5a55-7b21-4e6b-ab01-a089d3679bda" msprop:DbColumnName="PerCapital_Income" msprop:FriendlyName="PerCapital_Income" type="xs:double" minOccurs="0" />
+                  <xs:element name="RegionalPriceParity" msprop:design-time-name="1129c396-6b4e-4b9d-ade3-eb0277df5183" msprop:DbColumnName="RegionalPriceParity" msprop:FriendlyName="RegionalPriceParity" type="xs:double" minOccurs="0" />
+                  <xs:element name="State_SK" msprop:design-time-name="140550c3-8c80-4e99-b7cf-2ca835f2cde7" msprop:DbColumnName="State_SK" msprop:FriendlyName="State_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year_SK" msprop:design-time-name="b6eadf12-4a82-4878-8006-bba5315f557d" msprop:DbColumnName="Year_SK" msprop:FriendlyName="Year_SK" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Medicaid_Fact" msprop:design-time-name="910c73a5-a5a0-4437-96d9-28ab09031b33" msprop:DbTableName="Medicaid_Fact" msprop:FriendlyName="Medicaid_Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Total_Cost" msprop:design-time-name="27654ef8-3b50-4cc2-8274-bf7f5c1e3670" msprop:DbColumnName="Total_Cost" msprop:FriendlyName="Total_Cost" type="xs:double" minOccurs="0" />
+                  <xs:element name="IP_Cost" msprop:design-time-name="7def8458-746b-4621-9b95-e8d5fefe6e37" msprop:DbColumnName="IP_Cost" msprop:FriendlyName="IP_Cost" type="xs:double" minOccurs="0" />
+                  <xs:element name="OP_Cost" msprop:design-time-name="198c6252-844e-4177-a935-c3e847640dae" msprop:DbColumnName="OP_Cost" msprop:FriendlyName="OP_Cost" type="xs:double" minOccurs="0" />
+                  <xs:element name="PrescribedDrugs" msprop:design-time-name="81773c3e-cd35-4a3c-a9ef-d0c5628a5851" msprop:DbColumnName="PrescribedDrugs" msprop:FriendlyName="PrescribedDrugs" type="xs:double" minOccurs="0" />
+                  <xs:element name="HospiceBenefits" msprop:design-time-name="9661be81-d947-4f8b-a988-223fdcfbb874" msprop:DbColumnName="HospiceBenefits" msprop:FriendlyName="HospiceBenefits" type="xs:double" minOccurs="0" />
+                  <xs:element name="FederallyQualifiedHealthCenter" msprop:design-time-name="06c6113f-fc39-4a7e-807f-765510819480" msprop:DbColumnName="FederallyQualifiedHealthCenter" msprop:FriendlyName="FederallyQualifiedHealthCenter" type="xs:double" minOccurs="0" />
+                  <xs:element name="RehabilativeServices" msprop:design-time-name="8fbc754e-a6fc-415d-a6fc-936b130e28ee" msprop:DbColumnName="RehabilativeServices" msprop:FriendlyName="RehabilativeServices" type="xs:double" minOccurs="0" />
+                  <xs:element name="HomeHealthServices" msprop:design-time-name="b52a5181-15e6-49ea-961b-1021a8d6b08e" msprop:DbColumnName="HomeHealthServices" msprop:FriendlyName="HomeHealthServices" type="xs:double" minOccurs="0" />
+                  <xs:element name="State_SK" msprop:design-time-name="aed181f0-fd8c-4d87-acfe-1575aaea4a3b" msprop:DbColumnName="State_SK" msprop:FriendlyName="State_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="AgeGroup_SK" msprop:design-time-name="e3d871d9-9101-447e-9ea2-33656bcfee39" msprop:DbColumnName="AgeGroup_SK" msprop:FriendlyName="AgeGroup_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Gender_SK" msprop:design-time-name="1b4948e1-1d5a-4eff-a6ff-74b53ed33742" msprop:DbColumnName="Gender_SK" msprop:FriendlyName="Gender_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Race_SK" msprop:design-time-name="56ec0dc3-7727-47aa-b8db-9829efc507df" msprop:DbColumnName="Race_SK" msprop:FriendlyName="Race_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year_SK" msprop:design-time-name="72038aa2-294e-4fba-b158-550c666e8f4f" msprop:DbColumnName="Year_SK" msprop:FriendlyName="Year_SK" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Medicare_Fact" msprop:design-time-name="22f91d91-d685-4330-a2e2-f4032d1a1e69" msprop:DbTableName="Medicare_Fact" msprop:FriendlyName="Medicare_Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Total_Cost" msprop:design-time-name="7f22ec90-cc05-433c-8877-235eefc6355c" msprop:DbColumnName="Total_Cost" msprop:FriendlyName="Total_Cost" type="xs:double" minOccurs="0" />
+                  <xs:element name="IP_Cost" msprop:design-time-name="4e830e07-d78e-4244-84d8-0c72e786ee8c" msprop:DbColumnName="IP_Cost" msprop:FriendlyName="IP_Cost" type="xs:double" minOccurs="0" />
+                  <xs:element name="OP_Cost" msprop:design-time-name="44235e4a-ccbb-4b1b-8303-b6108fc7d0cf" msprop:DbColumnName="OP_Cost" msprop:FriendlyName="OP_Cost" type="xs:double" minOccurs="0" />
+                  <xs:element name="PrescribedDrugs" msprop:design-time-name="690833a2-d82c-4c35-8cc0-483c29fb16a7" msprop:DbColumnName="PrescribedDrugs" msprop:FriendlyName="PrescribedDrugs" type="xs:double" minOccurs="0" />
+                  <xs:element name="HospiceBenefits" msprop:design-time-name="824ecebb-a94b-4b34-9b88-c30453920ef7" msprop:DbColumnName="HospiceBenefits" msprop:FriendlyName="HospiceBenefits" type="xs:double" minOccurs="0" />
+                  <xs:element name="FederallyQualifiedHealthCenter" msprop:design-time-name="e67a4384-db4c-47dd-9d73-971f170df32d" msprop:DbColumnName="FederallyQualifiedHealthCenter" msprop:FriendlyName="FederallyQualifiedHealthCenter" type="xs:double" minOccurs="0" />
+                  <xs:element name="RehabilativeServices" msprop:design-time-name="0c0c87c0-5f4d-4f5f-8a21-eb08bb16c14c" msprop:DbColumnName="RehabilativeServices" msprop:FriendlyName="RehabilativeServices" type="xs:double" minOccurs="0" />
+                  <xs:element name="HomeHealthServices" msprop:design-time-name="8821edd1-f7ed-4893-9ec5-b12d8455ed89" msprop:DbColumnName="HomeHealthServices" msprop:FriendlyName="HomeHealthServices" type="xs:double" minOccurs="0" />
+                  <xs:element name="State_SK" msprop:design-time-name="3dda3d00-af99-4534-8ae9-d95642109dd5" msprop:DbColumnName="State_SK" msprop:FriendlyName="State_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="AgeGroup_SK" msprop:design-time-name="50ece0b7-590b-45e8-a709-48f1086db31a" msprop:DbColumnName="AgeGroup_SK" msprop:FriendlyName="AgeGroup_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Gender_SK" msprop:design-time-name="e410b984-22f6-4677-9241-04364f5e2c4c" msprop:DbColumnName="Gender_SK" msprop:FriendlyName="Gender_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Race_SK" msprop:design-time-name="58e949c9-0c47-461f-b4c2-5d37e6165d3d" msprop:DbColumnName="Race_SK" msprop:FriendlyName="Race_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year_SK" msprop:design-time-name="5ed35406-93ac-4a88-957a-f303f9052e0a" msprop:DbColumnName="Year_SK" msprop:FriendlyName="Year_SK" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Poverty_Fact" msprop:design-time-name="ccfdb717-4ec3-4afd-accc-31ed02c2d275" msprop:DbTableName="Poverty_Fact" msprop:FriendlyName="Poverty_Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Poverty_Rate" msprop:design-time-name="7d6a4e39-969a-49fd-839a-a838c2f341e2" msprop:DbColumnName="Poverty_Rate" msprop:FriendlyName="Poverty_Rate" type="xs:double" minOccurs="0" />
+                  <xs:element name="State_SK" msprop:design-time-name="0beb5213-5bf4-4e89-8c30-f592c95fea95" msprop:DbColumnName="State_SK" msprop:FriendlyName="State_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="AgeGroup_SK" msprop:design-time-name="31d3009c-9b6a-422b-bd81-2908d9b9f555" msprop:DbColumnName="AgeGroup_SK" msprop:FriendlyName="AgeGroup_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Gender_SK" msprop:design-time-name="acc95c95-5496-4eb2-8a80-b9a7a4a52185" msprop:DbColumnName="Gender_SK" msprop:FriendlyName="Gender_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Race_SK" msprop:design-time-name="ab5e05a3-382b-4a46-92a3-d28270c3efbf" msprop:DbColumnName="Race_SK" msprop:FriendlyName="Race_SK" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year_SK" msprop:design-time-name="abdd16d6-6d15-44e5-a6d0-d2305f981b94" msprop:DbColumnName="Year_SK" msprop:FriendlyName="Year_SK" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Race" msprop:design-time-name="e103c2df-ab27-40ab-bf60-f1340adffc44" msprop:DbTableName="Dim_Race" msprop:FriendlyName="Dim_Race" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Race_SK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="c0a53670-2d7a-4051-897d-b3c327f9587b" msprop:DbColumnName="Race_SK" msprop:FriendlyName="Race_SK" type="xs:int" />
+                  <xs:element name="Race" msprop:design-time-name="379a58c2-e319-4a29-888c-47bede1cc94b" msprop:DbColumnName="Race" msprop:FriendlyName="Race">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_CoverageType" msprop:design-time-name="98afb392-04c4-431c-9ceb-01b5d7d04c38" msprop:DbTableName="Dim_CoverageType" msprop:FriendlyName="Dim_CoverageType" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CoverageType_SK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6a93fe75-53b4-4e5b-9346-a8d4498407d0" msprop:DbColumnName="CoverageType_SK" msprop:FriendlyName="CoverageType_SK" type="xs:int" />
+                  <xs:element name="Coverage_Type" msprop:design-time-name="83f6378d-742f-4802-b28d-75e277c6a812" msprop:DbColumnName="Coverage_Type" msprop:FriendlyName="Coverage_Type">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_AgeGroup" msprop:design-time-name="1c2a6ab1-cbac-4da6-965d-40fe83c80be3" msprop:DbTableName="Dim_AgeGroup" msprop:FriendlyName="Dim_AgeGroup" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="AgeGroup_SK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b7e502c6-4797-42c8-9121-9c2dce9290e4" msprop:DbColumnName="AgeGroup_SK" msprop:FriendlyName="AgeGroup_SK" type="xs:int" />
+                  <xs:element name="Age_Group" msprop:design-time-name="0843dc0e-714f-450a-a733-4a7284be147c" msprop:DbColumnName="Age_Group" msprop:FriendlyName="Age_Group">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Gender" msprop:design-time-name="a8a3808a-fd60-4da2-9fad-54cbef3a056f" msprop:DbTableName="Dim_Gender" msprop:FriendlyName="Dim_Gender" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Gender_SK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="10af8d85-e4b3-46e0-b80e-9bd97a9d09d3" msprop:DbColumnName="Gender_SK" msprop:FriendlyName="Gender_SK" type="xs:int" />
+                  <xs:element name="Gender" msprop:design-time-name="8403f1a7-b65a-440c-81d4-f462308be410" msprop:DbColumnName="Gender" msprop:FriendlyName="Gender">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Year" msprop:design-time-name="74d0b577-0728-4d69-9f8d-4fec4ca1af6c" msprop:DbTableName="Dim_Year" msprop:FriendlyName="Dim_Year" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Year_SK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="e35a11e5-b5f9-4943-9eb2-a8f55bf29742" msprop:DbColumnName="Year_SK" msprop:FriendlyName="Year_SK" type="xs:int" />
+                  <xs:element name="Year" msprop:design-time-name="eae4f389-185f-4d7e-b89e-a267da64ae54" msprop:DbColumnName="Year" msprop:FriendlyName="Year">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_State" msprop:design-time-name="36631d31-0943-4545-922a-e61d47237f21" msprop:DbTableName="Dim_State" msprop:FriendlyName="Dim_State" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="State_SK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d1b696bc-6e3f-411b-ba3d-c984118357c1" msprop:DbColumnName="State_SK" msprop:FriendlyName="State_SK" type="xs:int" />
+                  <xs:element name="State" msprop:design-time-name="8175c587-2451-474e-995f-0692672dc82a" msprop:DbColumnName="State" msprop:FriendlyName="State">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Race" />
+          <xs:field xpath="Race_SK" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_CoverageType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_CoverageType" />
+          <xs:field xpath="CoverageType_SK" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_AgeGroup_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_AgeGroup" />
+          <xs:field xpath="AgeGroup_SK" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Gender_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Gender" />
+          <xs:field xpath="Gender_SK" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Year_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Year" />
+          <xs:field xpath="Year_SK" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_State_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_State" />
+          <xs:field xpath="State_SK" />
+        </xs:unique>
+        <xs:keyref name="Relationship33" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Poverty_Fact" />
+          <xs:field xpath="Race_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship26" refer="dbo_Dim_Year_Constraint1">
+          <xs:selector xpath=".//dbo_Poverty_Fact" />
+          <xs:field xpath="Year_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship18" refer="dbo_Dim_State_Constraint1">
+          <xs:selector xpath=".//dbo_Poverty_Fact" />
+          <xs:field xpath="State_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship20" refer="dbo_Dim_AgeGroup_Constraint1">
+          <xs:selector xpath=".//dbo_Poverty_Fact" />
+          <xs:field xpath="AgeGroup_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship30" refer="dbo_Dim_Gender_Constraint1">
+          <xs:selector xpath=".//dbo_Poverty_Fact" />
+          <xs:field xpath="Gender_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship34" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Medicare_Fact" />
+          <xs:field xpath="Race_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship29" refer="dbo_Dim_Gender_Constraint1">
+          <xs:selector xpath=".//dbo_Medicare_Fact" />
+          <xs:field xpath="Gender_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship22" refer="dbo_Dim_AgeGroup_Constraint1">
+          <xs:selector xpath=".//dbo_Medicare_Fact" />
+          <xs:field xpath="AgeGroup_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship19" refer="dbo_Dim_State_Constraint1">
+          <xs:selector xpath=".//dbo_Medicare_Fact" />
+          <xs:field xpath="State_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship24" refer="dbo_Dim_Year_Constraint1">
+          <xs:selector xpath=".//dbo_Medicare_Fact" />
+          <xs:field xpath="Year_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship32" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Medicaid_Fact" />
+          <xs:field xpath="Race_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship27" refer="dbo_Dim_Year_Constraint1">
+          <xs:selector xpath=".//dbo_Medicaid_Fact" />
+          <xs:field xpath="Year_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship13" refer="dbo_Dim_State_Constraint1">
+          <xs:selector xpath=".//dbo_Medicaid_Fact" />
+          <xs:field xpath="State_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship21" refer="dbo_Dim_AgeGroup_Constraint1">
+          <xs:selector xpath=".//dbo_Medicaid_Fact" />
+          <xs:field xpath="AgeGroup_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship31" refer="dbo_Dim_Gender_Constraint1">
+          <xs:selector xpath=".//dbo_Medicaid_Fact" />
+          <xs:field xpath="Gender_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship23" refer="dbo_Dim_Year_Constraint1">
+          <xs:selector xpath=".//dbo_Income_Fact" />
+          <xs:field xpath="Year_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship14" refer="dbo_Dim_State_Constraint1">
+          <xs:selector xpath=".//dbo_Income_Fact" />
+          <xs:field xpath="State_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship28" refer="dbo_Dim_CoverageType_Constraint1">
+          <xs:selector xpath=".//dbo_HealthInsuranceDispersion_Fact" />
+          <xs:field xpath="CoverageType_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship17" refer="dbo_Dim_AgeGroup_Constraint1">
+          <xs:selector xpath=".//dbo_HealthInsuranceDispersion_Fact" />
+          <xs:field xpath="AgeGroup_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship12" refer="dbo_Dim_State_Constraint1">
+          <xs:selector xpath=".//dbo_HealthInsuranceDispersion_Fact" />
+          <xs:field xpath="State_SK" />
+        </xs:keyref>
+        <xs:keyref name="Relationship25" refer="dbo_Dim_Year_Constraint1">
+          <xs:selector xpath=".//dbo_HealthInsuranceDispersion_Fact" />
+          <xs:field xpath="Year_SK" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Project_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>

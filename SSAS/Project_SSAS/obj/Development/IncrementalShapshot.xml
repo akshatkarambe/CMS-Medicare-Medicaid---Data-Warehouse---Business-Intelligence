@@ -1,0 +1,131 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Project_SSAS</Database>
+    <Server>DESKTOP-TE4R1P3\SQLDEV17</Server>
+    <ConnectionString>Data Source=DESKTOP-TE4R1P3\SQLDEV17;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>3t3riPiFvBlrfoxtzLEiw3vW3QM=22-04-2019 7.56.09 PM22-04-2019 7.56.09 PM</TimeStamp>
+        <ID>
+          <String>ProjectDW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>0Wj7DbZf8s/ylYluORhNaCzIUL4=22-04-2019 8.12.41 PM22-04-2019 8.12.41 PM</TimeStamp>
+        <ID>
+          <String>Project DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>WjjvoFusO2Ed4t8EcuIX5dlprFU=22-04-2019 8.14.44 PM22-04-2019 8.13.22 PM</TimeStamp>
+        <ID>
+          <String>Dim Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CXMA8p3mxta49gdmipB1rwnevno=22-04-2019 8.14.44 PM22-04-2019 8.13.22 PM</TimeStamp>
+        <ID>
+          <String>Dim State</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DmQA8RzHxAulUDkvNzqmQ5AbtDU=22-04-2019 8.14.44 PM22-04-2019 8.13.22 PM</TimeStamp>
+        <ID>
+          <String>Dim Age Group</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TqB5kxHijMuhX4pv8apM5prl62g=22-04-2019 8.14.44 PM22-04-2019 8.13.22 PM</TimeStamp>
+        <ID>
+          <String>Dim Coverage Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8DuixWkoBofl9xW0g5WmYPk6wE8=22-04-2019 8.14.44 PM22-04-2019 8.13.22 PM</TimeStamp>
+        <ID>
+          <String>Dim Gender</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>//P6l7rKhTyDL8Ni+awVr7Tvv+g=22-04-2019 8.14.44 PM22-04-2019 8.13.22 PM</TimeStamp>
+        <ID>
+          <String>Dim Race</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>gCPl1E64FD+6LQU1m/neD0c0m1o=22-04-2019 10.13.53 PM22-04-2019 8.13.22 PMj5+XMEIzd03iCIvtAOT5SftUbYk=22-04-2019 8.13.23 PM22-04-2019 8.13.22 PM</TimeStamp>
+        <ID>
+          <String>Project DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>qU3cpUif993Tb3GyOWWW6f85zFM=22-04-2019 10.15.30 PM22-04-2019 10.15.30 PMcel2twsJk6ToQkkSuYhhGvKXbhA=22-04-2019 10.15.30 PM22-04-2019 10.15.30 PM</TimeStamp>
+        <ID>
+          <String>Medicare</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>SjpM+HWwNeH705quHgd4+DIyjpw=22-04-2019 10.17.41 PM22-04-2019 10.17.41 PMR0SX7F/VqhBmQk1jZn+umgC1EzA=22-04-2019 10.17.41 PM22-04-2019 10.17.41 PM</TimeStamp>
+        <ID>
+          <String>Medicaid</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>iluM+WbS2BzJw4QjBw8DG4sgapo=22-04-2019 10.19.42 PM22-04-2019 10.19.42 PMXrCEIdlf82uHnQbWys1TIjTNDbE=22-04-2019 10.19.42 PM22-04-2019 10.19.42 PM</TimeStamp>
+        <ID>
+          <String>HID</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>uufwzTdNx7L3oAMoPa03BPLKLps=22-04-2019 10.20.34 PM22-04-2019 10.20.34 PM3hsvzFNB7bfQcjP2aSOwXKEbAqY=22-04-2019 10.20.34 PM22-04-2019 10.20.34 PM</TimeStamp>
+        <ID>
+          <String>Income</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>j3lgZctQXlycX2ZtAULZaGtc3ds=22-04-2019 10.21.39 PM22-04-2019 10.21.14 PMr+qtf4vmBh78bqnDA5sO4VYkWfk=22-04-2019 10.21.14 PM22-04-2019 10.21.14 PM</TimeStamp>
+        <ID>
+          <String>Poverty</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>EEfx1GDsdk5ENhjk5OxvrRJfd7g=17-04-2019 3.37.05 PM17-04-2019 3.37.05 PM</TimeStamp>
+      <ID>
+        <String>Project_SSAS</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2019-04-24T15:26:10.97Z</LastDeployed>
+</DeploymentSnapshot>

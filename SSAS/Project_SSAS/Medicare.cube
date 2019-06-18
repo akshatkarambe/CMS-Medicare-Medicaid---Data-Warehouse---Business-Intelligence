@@ -1,0 +1,327 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a543ad68-8575-4a10-8ad2-b0bcb6b33847" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Medicare</ID>
+  <Name>Medicare</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="e5b49fc4-0fa0-41e3-bc18-529778a3d5f5">
+      <ID>Dim Race</ID>
+      <Name>Dim Race</Name>
+      <DimensionID>Dim Race</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="02389759-ce1e-4064-b155-8e2b9f096164">
+          <AttributeID>Race SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="532a0996-36d7-4a74-8187-5e5c3248656e">
+          <AttributeID>Race</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d7715053-e62d-4da4-beef-88973bbd9d15">
+      <ID>Dim Gender</ID>
+      <Name>Dim Gender</Name>
+      <DimensionID>Dim Gender</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3b12c765-da71-47bb-92ef-8f3d89b13e86">
+          <AttributeID>Gender SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e49fea2d-832a-46f5-87f0-d37e0af24445">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ebc9a9ee-cdcb-4c20-a55e-d211b166766a">
+      <ID>Dim Age Group</ID>
+      <Name>Dim Age Group</Name>
+      <DimensionID>Dim Age Group</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bc32bf6a-4474-4821-9353-e73805733641">
+          <AttributeID>Age Group SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b13285b7-b61f-4218-97ad-18005ca59668">
+          <AttributeID>Age Group</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fb0d8b03-25ce-4a56-bda4-561a401e0e15">
+      <ID>Dim State</ID>
+      <Name>Dim State</Name>
+      <DimensionID>Dim State</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="daa39264-5b4a-4e9f-8fd8-e47bb75a51b0">
+          <AttributeID>State SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9bd85435-5c8c-4d07-aff2-3086763b36f2">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a21d1f90-a7d3-4425-9b1c-67c7714be28e">
+      <ID>Dim Year</ID>
+      <Name>Dim Year</Name>
+      <DimensionID>Dim Year</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="05b07f4b-3a8c-4e95-b9e9-bdace85ed66b">
+          <AttributeID>Year SK</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="80662738-6200-40e5-bf8e-d430d8775f8f">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="b779daf5-ef15-4d34-830f-c5b4a15e5a3e">
+      <ID>Medicare Fact</ID>
+      <Name>Medicare Fact</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="f90bdd0c-f5e2-489d-980f-126f965a0242">
+          <ID>Total Cost</ID>
+          <Name>Total Cost</Name>
+          <Source dwd:design-time-name="82bd2c7d-633a-4637-8f42-94e93e466229">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8a8379ec-2a96-472a-ac66-2bbda7b13a07">
+              <TableID>dbo_Medicare_Fact</TableID>
+              <ColumnID>Total_Cost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="10671707-c3a5-4d0f-b133-7566e513de3d">
+          <ID>IP Cost</ID>
+          <Name>IP Cost</Name>
+          <Source dwd:design-time-name="b95326a4-cddd-45e0-8a1e-dfe1946ba436">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6ec40471-e00e-4f7d-ae5e-5d99d736eac8">
+              <TableID>dbo_Medicare_Fact</TableID>
+              <ColumnID>IP_Cost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="81666608-cf02-4467-a21b-e77988f5eab0">
+          <ID>OP Cost</ID>
+          <Name>OP Cost</Name>
+          <Source dwd:design-time-name="97448ff8-20d1-48a6-b903-ebde8ef69f93">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9df15223-8a8a-4566-a336-f6cf40bb978b">
+              <TableID>dbo_Medicare_Fact</TableID>
+              <ColumnID>OP_Cost</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="302605cd-0bb8-4bd9-af57-d50d1c8f7801">
+          <ID>Prescribed Drugs</ID>
+          <Name>Prescribed Drugs</Name>
+          <Source dwd:design-time-name="bfd8fa7f-239f-4e9a-b6e7-9df54bd33e47">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ee418612-67d8-4275-9cda-5cd38785ea21">
+              <TableID>dbo_Medicare_Fact</TableID>
+              <ColumnID>PrescribedDrugs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="03e9a256-819c-46d3-bc86-b4dddf53f546">
+          <ID>Hospice Benefits</ID>
+          <Name>Hospice Benefits</Name>
+          <Source dwd:design-time-name="5d47fee4-f63d-4026-8aee-e2b61206c1fb">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="be6f5686-b85b-4a00-ab59-6835d090e0df">
+              <TableID>dbo_Medicare_Fact</TableID>
+              <ColumnID>HospiceBenefits</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b317ceb4-0701-449d-8395-2aec7b0ddaf3">
+          <ID>Federally Qualified Health Center</ID>
+          <Name>Federally Qualified Health Center</Name>
+          <Source dwd:design-time-name="35e8656b-b40a-40a3-bd9b-fd6a811c15c4">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ba4bb911-0908-477c-8a2c-0447e01232b3">
+              <TableID>dbo_Medicare_Fact</TableID>
+              <ColumnID>FederallyQualifiedHealthCenter</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9f95c623-9579-4a42-b04d-b93a990ba1ed">
+          <ID>Rehabilative Services</ID>
+          <Name>Rehabilative Services</Name>
+          <Source dwd:design-time-name="b9f63cf4-3106-4534-8f88-ad2283c3585c">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6bfbbc72-7e8c-4424-8527-de5716ae884c">
+              <TableID>dbo_Medicare_Fact</TableID>
+              <ColumnID>RehabilativeServices</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="defa7f35-d237-4cfb-8839-35c0e22ffa41">
+          <ID>Home Health Services</ID>
+          <Name>Home Health Services</Name>
+          <Source dwd:design-time-name="5a7ab238-fca9-4a58-b389-bb5630346494">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f5a27445-e150-4940-81c3-ce1fa35aadd1">
+              <TableID>dbo_Medicare_Fact</TableID>
+              <ColumnID>HomeHealthServices</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d6d5b6d3-f923-41eb-a21d-a74129c1bb9f">
+          <ID>Medicare Fact Count</ID>
+          <Name>Medicare Fact Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d759da43-0b93-46b5-bc6e-0282e23a07bd">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="114c5c78-cc85-4a46-990e-c5e8b87e10a6">
+              <TableID>dbo_Medicare_Fact</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ea4af180-2a28-4402-a7fe-6433a46d70ff">
+          <CubeDimensionID>Dim Race</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0c620e09-79b5-4475-9bb5-47e396e72486">
+              <AttributeID>Race SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6084ffbc-4904-4a3d-97b8-d1c8eb17779d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="da7a15e4-8a12-4302-a8c6-17f17e489150">
+                    <TableID>dbo_Medicare_Fact</TableID>
+                    <ColumnID>Race_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="67c37937-e811-437c-b026-22d91baefacb">
+          <CubeDimensionID>Dim Gender</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ad8438b1-edb8-48f2-bb36-43b9b443b6d1">
+              <AttributeID>Gender SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="01dddca5-5058-4477-b1c4-fec7c519b7c2">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="109099cf-9a7c-4691-a378-1d53e631872f">
+                    <TableID>dbo_Medicare_Fact</TableID>
+                    <ColumnID>Gender_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="125ca187-638f-4ea7-9058-c3d814bb9057">
+          <CubeDimensionID>Dim Age Group</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aa4f618e-b090-4d8e-a149-5554db16abe7">
+              <AttributeID>Age Group SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a3612f40-ce68-445a-8c08-de7379ccb83b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04a4fd22-f0b8-46dc-a8d3-b900cdcab877">
+                    <TableID>dbo_Medicare_Fact</TableID>
+                    <ColumnID>AgeGroup_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2da8a2b5-8583-4773-8ebc-3eec091765d5">
+          <CubeDimensionID>Dim State</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="78bf923d-9a12-4f2b-bd7c-7aa4d8bb4ca9">
+              <AttributeID>State SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fb5c26ea-a083-4156-9230-b42280188143">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a0adeec2-113d-4d11-9d1d-eab3a2428c87">
+                    <TableID>dbo_Medicare_Fact</TableID>
+                    <ColumnID>State_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8f750626-9f4d-4432-a9b9-4ce8bb38a825">
+          <CubeDimensionID>Dim Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="19cf40a9-4b25-479e-8bdc-eaae0471bd7a">
+              <AttributeID>Year SK</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bc4bdc3e-4ce1-4eaf-9011-5fa545b944d4">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8905088a-654b-4141-95e4-a1006971893c">
+                    <TableID>dbo_Medicare_Fact</TableID>
+                    <ColumnID>Year_SK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="01c538ae-f714-49d5-88f7-efbf56445b2d">
+    <DataSourceViewID>Project DW</DataSourceViewID>
+  </Source>
+</Cube>

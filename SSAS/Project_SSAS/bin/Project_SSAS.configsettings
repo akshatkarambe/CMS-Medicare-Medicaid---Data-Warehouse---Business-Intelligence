@@ -1,0 +1,151 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>ProjectDW</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-TE4R1P3\SQLDEV_17;Integrated Security=SSPI;Initial Catalog=ProjectDW</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">admin</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Year</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim State</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Age Group</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Coverage Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Gender</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Race</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>Project DW</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Health Insurance Dispersion Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Health Insurance Dispersion Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Income Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Income Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Medicaid Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Medicaid Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Medicare Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Medicare Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Poverty Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Poverty Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Medicare</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Medicare Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Medicare Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Medicaid</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Medicaid Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Medicaid Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>HID</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Health Insurance Dispersion Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Health Insurance Dispersion Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Income</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Income Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Income Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Poverty</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Poverty Fact</ID>
+            <Partitions>
+              <Partition>
+                <ID>Poverty Fact</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>
