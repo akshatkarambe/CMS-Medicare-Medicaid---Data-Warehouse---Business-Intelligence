@@ -13,6 +13,7 @@ Designed star schema dimensional data model in SSAS; Performed ad-hoc analysis t
 Generated interactive dashboards in Tableau to provide BI insights and showcase KPIs and performance matrix
 
 **Content**
+
 -Data Files
  - 5 ".CSV" files which are cleaned and ready to load in warehouse
  - 1 ".cub" file which is an Analysis Services cube files.
