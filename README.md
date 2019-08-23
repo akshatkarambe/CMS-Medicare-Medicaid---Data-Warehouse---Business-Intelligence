@@ -2,15 +2,18 @@
 
 **Overview**
 
-Designed and developed a centralized data warehouse from diverse sources using SSIS and SSAS 
+Designed and implemented a star schema Data Warehouse for medicare and medicaid health insurance data and deployed the data warehouse on Azure SQL Database 
 
-Performed data scrubbing using Excel Macros, VLOOKUP, HLOOKUP and R to modify and remove inconsistent and irrelevant data, added calculated fields; this helped in getting the data in the required format 
+Performed data scrubbing using Excel Macros, VLOOKUP, HLOOKUP and R to modify and remove inconsistent and irrelevant data, added calculated fields; which helped get the data in the required format
 
-Extracted and analyzed the data to develop end-to-end ETL workflow in SSIS; Implemented sequence containers in SSIS to improve the efficiency of the workflow by 25%  
+Analyzed data for source/target mappings and created ETL packages in SSIS for data processing and automation
 
-Designed star schema dimensional data model in SSAS; Performed ad-hoc analysis to get the insights and learn patterns in data 
+Implemented sequence containers in SSIS to improve the efficiency of the workflow by 25% 
 
-Generated interactive dashboards in Tableau to provide BI insights and showcase KPIs and performance matrix
+Built multidimensional OLAP cubes using SSAS to create reports according to business requirements
+
+Generated interactive and static dashboards in Tableau to provide BI insights and showcase KPIs and performance matrix
+
 
 **Content**
 
